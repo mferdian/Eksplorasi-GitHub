@@ -78,3 +78,10 @@ GitHub merupakan platform berbasis Git yang digunakan untuk mengelola versi kode
  `git stash pop`   Mengembalikan perubahan dari stash.          `git stash pop`   
  `git tag <nama>`  Menandai versi tertentu pada commit.         `git tag v1.0`    
 
+
+
+
+
+
+Sekian Dan Terimakasih, Best Regard (Maulana Ferdiansyah Eka Putra)
+
