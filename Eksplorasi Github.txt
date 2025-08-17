@@ -1,0 +1,80 @@
+ 1. Pendahuluan
+
+GitHub merupakan platform berbasis Git yang digunakan untuk mengelola versi kode (version control) secara kolaboratif. Untuk mengoperasikan GitHub melalui terminal, terdapat berbagai perintah (command) Git yang digunakan sesuai kebutuhan, mulai dari inisialisasi repository, manajemen file, branching, hingga sinkronisasi dengan repository online.
+
+
+
+ 2. Daftar Command Git
+
+ A. DasarDasar Git
+
+ Command            Fungsi                                               Contoh Penggunaan                            
+      
+ `git init`         Membuat repository Git baru di folder lokal.         `git init`                                   
+ `git clone <url>`  Mengunduh repository dari GitHub ke komputer lokal.  `git clone https://github.com/user/repo.git` 
+ `git config`       Mengatur konfigurasi Git (nama & email pengguna).    `git config global user.name "Nama"`       
+
+
+
+ B. Manajemen File
+
+ Command                           Fungsi                                    Contoh Penggunaan                         
+      
+ `git status`                      Melihat status file pada repository.      `git status`                              
+ `git add <file>`                  Menambahkan file ke staging area.         `git add index.html`                      
+ `git commit m "pesan"`           Menyimpan perubahan dengan pesan commit.  `git commit m "Menambahkan fitur login"` 
+ `git rm <file>`                   Menghapus file dari repository.           `git rm data.txt`                         
+ `git mv <file_lama> <file_baru>`  Merename/memindahkan file.                `git mv lama.txt baru.txt`                
+
+
+
+ C. Riwayat & Log
+
+ Command     Fungsi                                  Contoh Penggunaan 
+      
+ `git log`   Menampilkan riwayat commit.             `git log`         
+ `git diff`  Melihat perubahan file sebelum commit.  `git diff`        
+
+
+
+ D. Branching & Merging
+
+ Command                   Fungsi                                 Contoh Penggunaan                
+      
+ `git branch`              Melihat daftar branch.                 `git branch`                     
+ `git branch <nama>`       Membuat branch baru.                   `git branch fiturlogin`         
+ `git checkout <nama>`     Pindah ke branch lain.                 `git checkout fiturlogin`       
+ `git checkout b <nama>`  Membuat dan pindah ke branch baru.     `git checkout b fiturregister` 
+ `git merge <nama>`        Menggabungkan branch ke branch aktif.  `git merge fiturlogin`          
+
+
+
+ E. Sinkronisasi dengan GitHub
+
+ Command                        Fungsi                                        Contoh Penggunaan                                        
+      
+ `git remote add origin <url>`  Menghubungkan repository lokal ke GitHub.     `git remote add origin https://github.com/user/repo.git` 
+ `git push origin <branch>`     Mengirim commit ke GitHub.                    `git push origin main`                                   
+ `git pull origin <branch>`     Mengambil update terbaru dari GitHub.         `git pull origin main`                                   
+ `git fetch`                    Mengambil perubahan dari remote tanpa merge.  `git fetch`                                              
+
+
+
+ F. Undo & Reset
+
+ Command                      Fungsi                                          Contoh Penggunaan         
+      
+ `git reset <file>`           Membatalkan file dari staging area.             `git reset index.html`    
+ `git reset hard <commit>`  Kembali ke commit tertentu, perubahan hilang.   `git reset hard abc123` 
+ `git revert <commit>`        Membatalkan commit dengan membuat commit baru.  `git revert abc123`       
+
+
+
+ G. Lainnya
+
+ Command           Fungsi                                       Contoh Penggunaan 
+      
+ `git stash`       Menyimpan perubahan sementara tanpa commit.  `git stash`       
+ `git stash pop`   Mengembalikan perubahan dari stash.          `git stash pop`   
+ `git tag <nama>`  Menandai versi tertentu pada commit.         `git tag v1.0`    
+
